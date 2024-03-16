@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Um template para criar um S3 bucket com um nome baseado em parâmetros.
+
+Parameters:
+  BucketName:
+    Description: O nome do bucket S3 a ser criado.
+    Type: String
+
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Ref BucketName
