@@ -11,3 +11,6 @@ Resources:
     Type: 'AWS::S3::Bucket'
     Properties:
       BucketName: !Ref BucketName
+Tags:
+  - Key: Projeto
+    Value: s3
